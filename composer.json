@@ -1,0 +1,26 @@
+{
+    "name": "laravel/central_bank_rate",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rubin Alexey",
+            "email": "aka-lamer@yandex.ru"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CentralBunk\\Rate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "CentralBunk\\Rate\\ServiceProvider"
+            ]
+        }
+    }
+}
